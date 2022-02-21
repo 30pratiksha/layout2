@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static Layout </title>
+    <style>
+        * {
+         box-sizing: border-box;
+         }
+        body {
+          margin: 0;
+        }
+        
+        /* Style the header */
+        .header {
+          background-color: #eed12b;
+          padding: 20px;
+          text-align: center;
+             }
+        .header img{
+          float: left;
+        }
+        /* Style the top navigation bar */
+        .topnav {
+           overflow: hidden;
+            background-color: white;
+           }
+
+         /* Style the topnav links */
+         .topnav a {
+             float: left;
+            display: block;
+            color: black;
+            text-align: center;
+             padding: 14px 90px;
+            text-decoration: none;
+            font-family: cursive;
+          }
+          /*image styling*/
+          img {
+              height: 300px;
+              width: 300px;
+          }
+
+          /* Change color on hover */
+        .topnav a:hover {
+              background-color: darkred;
+              color: black;
+             }
+             /* Create three equal columns that floats next to each other */
+         .column {
+             float: left;
+             width: 50%;
+             padding: 15px;
+          }
+
+        /* Clear floats after the columns */
+         .row:after {
+              content: "";
+             display: table;
+             clear: both;
+          }
+
+          /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width:600px) {
+               .column {
+              width: 100%;
+                  }
+                  }
+
+                  /* Style the footer */
+            .footer {
+                background-color:#eed12b ;
+                padding:40px;
+               text-align: center;
+             }
+             .footer p{
+                 float: left;
+                 margin-left: 70px;
+                 background-color: darkred;
+                 padding: 10px;
+                 border-radius: 5px;
+             }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" style="height: 90px; width: 90px;">
+        <h1 style="font-family: cursive; font-size: 40px;">Home Designs</h1>
+        <p  style="font-family:monospace; font-size: 20px; margin-left: 30px;">Architecture is inhabited sculpture.</p>
+      </div>
+
+      <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Infotmation</a>
+        <a href="#">Design</a>
+        <a href="#">Desigers</a>
+        <a href="#">Contacts</a>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+        <div class="section1">
+          <h2 style="font-family: cursive; font-size: 30px;">Emphasis</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+         Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+          Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. 
+          Praesent scelerisque tortor sed accumsan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+          Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+          Qula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+          </div>
+          <div class="section2">
+            <h2 style="font-family: cursive; font-size: 30px;" >Gallary</h2>
+            <img src="home1.jpg" style="border-radius: 10px;">
+            <img src="home2.jpg" style="border-radius: 10px;">
+            </div>
+        </div>
+        
+        <div class="column">
+          <h2 style="font-family: cursive; font-size: 30px;">Properties & Scales</h2>
+          <img src="home3.jpg" style="height: 300px; width: 500px; border-radius: 10px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+               Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+               s eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+         
+          <h2 style="font-family: cursive; font-size: 30px;">Our Clients</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+        </div>   
+      </div>
+
+      <div class="footer">
+          <h2 style="font-family: cursive; font-size: 40px;">About Us</h2>
+          <p>AWARD WINNING SOLUTION</p>
+          <p>EXCLUSIVE 10 YEAR WARRANTY</p>
+          <p>MODERN DESIGN PROJECT</p>
+          <p>SET A PERSONAL ESTIMATE</p><br><br><br>
+          <h3>
+            Copyright @ 2021 Home Design| Design by www.home design.com
+          </h3>
+     </div>
+</body>
+</html>
